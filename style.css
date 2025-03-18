@@ -1,0 +1,146 @@
+body{
+    overflow-y: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.main {
+    background-image: url(camera.jpg);
+    height: 100vh;
+}
+
+.btn1 i {
+    font-size: 25px;
+    position: relative;
+    top: 12px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.sidebarMenu {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 20%;
+    height: 105vh;
+    position: absolute;
+    margin: 40px 0px 0px 0px;
+    left: -400px;
+    top: -40px;
+    transition-timing-function: linear;
+}
+
+.sidebarMenu .logo {
+    height: 60px;
+    line-height: 60px;
+    font-size: 42px;
+    border: 2.5008px solid rgba(255, 255, 255, 0.1);
+    padding-left: 45px;
+    box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.sidebarMenu .logo a {
+    text-decoration: none;
+    font-family: "Explora", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sidebarMenu .btn2 {
+    font-size: 15px;
+    line-height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 93.5%;
+    opacity: 0.4;
+}
+
+.sidebarMenu .btn2 i {
+    cursor: pointer;
+}
+
+.sidebarMenu .menu {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.sidebarMenu .menu li {
+    margin: 0px 0px 30px 0px;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    opacity: 0.9;
+    color: white;
+}
+
+.sidebarMenu .menu li i {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.sidebarMenu .social {
+    margin: 0px 55px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.sidebarMenu .social i {
+    margin: 0px 10px;
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.btn1 i:hover {
+    font-size: 30px;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.sidebarMenu .btn2:hover {
+    transform: scale(1.5);
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+
+.sidebarMenu .menu li:hover {
+    border: 2.5008px solid rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.2);
+    transition-timing-function: linear;
+}
+
+.sidebarMenu .social i:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+#cb1 {
+    display: none;
+}
+
+#cb1:checked~.btn1 {
+    opacity: 0;
+}
+
+#cb1:checked~.sidebarMenu {
+    position: absolute;
+    left: 0px;
+    top: -40px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.sidebarMenu .social a,
+.sidebarMenu .menu a {
+    text-decoration: none !important;
+}
